@@ -1,0 +1,15 @@
+<form action="/create" method="post">	<!--get방식: 주소창에 보이게, post: 주소창에 안보이고 내부적으로 날아감-->
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  제목: <input type="text" name="title"><br>
+  내용: <input type="text" name="content"><br>
+  <input type="submit" value="Submit">
+</form>
+<% Post.all.each do |post| %>	<!-- %=면 , %면 내부적으로 처리 -->
+<hr>
+<h3>ID: <%= post.id %></h3>
+<h3>제목: <%= post.title %></h3>
+<p>내용: <%= post.content %></p>
+<a href="/edit?id=<%= post.id %>">수정하기</a>
+<a href="/delete?id=<%= post.id %>">삭제하기</a>
+<hr>
+<% end %>
