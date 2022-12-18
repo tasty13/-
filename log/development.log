@@ -4767,3 +4767,278 @@ Processing by BoardController#index as HTML
 Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.8ms | Allocations: 8986)
 
 
+Started GET "/board" for 172.17.0.1 at 2022-12-18 05:54:57 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:23
+  Rendered board/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 4135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 33.6ms | ActiveRecord: 0.3ms | Allocations: 9601)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 05:56:12 +0000
+Cannot render console from 10.1.20.142! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:23
+  Rendered board/index.html.erb within layouts/application (Duration: 73.1ms | Allocations: 874)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 93ms (Views: 91.7ms | ActiveRecord: 0.2ms | Allocations: 5962)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 05:56:13 +0000
+Cannot render console from 10.1.20.142! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:23
+  Rendered board/index.html.erb within layouts/application (Duration: 53.5ms | Allocations: 648)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.1ms | Allocations: 4610)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 05:59:48 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (39.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:17
+  Rendered board/index.html.erb within layouts/application (Duration: 41.6ms | Allocations: 869)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 8.9ms | ActiveRecord: 39.4ms | Allocations: 5953)
+
+
+Started POST "/create" for 172.17.0.1 at 2022-12-18 06:00:25 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#create as HTML
+  Parameters: {"authenticity_token"=>"WfXQ96FR68lfYJAVljUsN8NxVHNUGNUZYDHe4VDXaMPAxcgvrdlJMqAmsXT6PshvfdAIgiyyz7WFwKxDsvgFwQ==", "title"=>"", "content"=>"반갑습니다."}
+  [1m[35m (15.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/board_controller.rb:9:in `create'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["content", "반갑습니다."], ["created_at", "2022-12-18 06:00:25.533820"], ["updated_at", "2022-12-18 06:00:25.533820"]]
+  ↳ app/controllers/board_controller.rb:9:in `create'
+  [1m[35m (28.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/board_controller.rb:9:in `create'
+Redirected to http://test-uidcc.run.goorm.io/board
+Completed 302 Found in 50ms (ActiveRecord: 44.2ms | Allocations: 3188)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 06:00:25 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:17
+  Rendered board/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 883)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 6143)
+
+
+Started GET "/?t=1671343235318" for 172.17.0.1 at 2022-12-18 06:00:36 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Parameters: {"t"=>"1671343235318"}
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (51.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:17
+  Rendered board/index.html.erb within layouts/application (Duration: 52.5ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 6.7ms | ActiveRecord: 51.1ms | Allocations: 4860)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 06:01:49 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:17
+  Rendered board/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 682)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.2ms | Allocations: 4891)
+
+
+Started GET "/?t=1671343435944" for 172.17.0.1 at 2022-12-18 06:03:56 +0000
+Cannot render console from 10.1.20.142! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Parameters: {"t"=>"1671343435944"}
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (29.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:19
+  Rendered board/index.html.erb within layouts/application (Duration: 31.7ms | Allocations: 900)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 9.7ms | ActiveRecord: 29.3ms | Allocations: 6227)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 06:05:08 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:21
+  Rendered board/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 924)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 6006)
+
+
+Started GET "/edit?id=12" for 172.17.0.1 at 2022-12-18 06:05:17 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mPost Load (73.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/board_controller.rb:13:in `edit'
+  Rendering board/edit.html.erb within layouts/application
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/board/edit.html.erb:7
+  Rendered board/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 688)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 7.1ms | ActiveRecord: 73.4ms | Allocations: 5451)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 06:06:04 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:23
+  Rendered board/index.html.erb within layouts/application (Duration: 74.3ms | Allocations: 919)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 80.8ms | ActiveRecord: 0.2ms | Allocations: 6007)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 06:06:32 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:24
+  Rendered board/index.html.erb within layouts/application (Duration: 86.3ms | Allocations: 920)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 93ms (Views: 92.0ms | ActiveRecord: 0.2ms | Allocations: 6010)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 06:06:51 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:23
+  Rendered board/index.html.erb within layouts/application (Duration: 50.7ms | Allocations: 919)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.2ms | Allocations: 6005)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 06:08:39 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (75.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:22
+  Rendered board/index.html.erb within layouts/application (Duration: 78.2ms | Allocations: 923)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 9.2ms | ActiveRecord: 75.4ms | Allocations: 6030)
+
+
+Started GET "/?t=1671343235318" for 172.17.0.1 at 2022-12-18 06:09:02 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Parameters: {"t"=>"1671343235318"}
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (48.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:22
+  Rendered board/index.html.erb within layouts/application (Duration: 50.2ms | Allocations: 682)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 6.9ms | ActiveRecord: 48.3ms | Allocations: 4888)
+
+
+Started GET "/?t=1671343435944" for 172.17.0.1 at 2022-12-18 06:09:06 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Parameters: {"t"=>"1671343435944"}
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:22
+  Rendered board/index.html.erb within layouts/application (Duration: 81.7ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 86.4ms | ActiveRecord: 0.2ms | Allocations: 4860)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 06:10:50 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:22
+  Rendered board/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 917)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 6011)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 06:10:51 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:22
+  Rendered board/index.html.erb within layouts/application (Duration: 91.7ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 96.3ms | ActiveRecord: 0.2ms | Allocations: 4634)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 06:15:41 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (41.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:22
+  Rendered board/index.html.erb within layouts/application (Duration: 43.2ms | Allocations: 682)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 5.2ms | ActiveRecord: 41.9ms | Allocations: 4660)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-18 06:15:45 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (67.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:22
+  Rendered board/index.html.erb within layouts/application (Duration: 69.2ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 6.8ms | ActiveRecord: 67.7ms | Allocations: 4633)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 06:15:53 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:22
+  Rendered board/index.html.erb within layouts/application (Duration: 57.2ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 70.6ms | ActiveRecord: 0.1ms | Allocations: 4629)
+
+
+Started GET "/board" for 172.17.0.1 at 2022-12-18 06:15:54 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (50.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:22
+  Rendered board/index.html.erb within layouts/application (Duration: 52.0ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 5.8ms | ActiveRecord: 50.6ms | Allocations: 4625)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-18 06:16:23 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardController#index as HTML
+  Rendering board/index.html.erb within layouts/application
+  [1m[36mPost Load (67.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/board/index.html.erb:22
+  Rendered board/index.html.erb within layouts/application (Duration: 69.4ms | Allocations: 683)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 5.6ms | ActiveRecord: 67.9ms | Allocations: 4892)
+
+

@@ -1,19 +1,32 @@
-<form action="/create" method="post">	<!-- action: 목적지(날아가는 위치), method: 날아가는 방법 -->
-										<!-- get방식: 주소창에 보이게, post: 주소창에 안보이고 내부적으로 날아감 -->
-  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+<div class="container">
+	<form action="/create" method="post">	<!-- action: 목적지(날아가는 위치), method: 날아가는 방법 -->
+											<!-- get방식: 주소창에 보이게, post: 주소창에 안보이고 내부적으로 날아감 -->
+		<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
 										<!-- InvalidAuthencityToken 오류 해결: 우리 사이트에서 쏜 명령어라는 걸
 										확인할 수 있는 랜덤 토큰을 주고 받으며 토큰이 일치해야 요청 받아들임 -->
-  제목: <input type="text" name="title"><br>
-  내용: <input type="text" name="content"><br>
-  <input type="submit" value="Submit">
-</form>
-<h2 align="center">게시판</h2><br/>
-<% Post.all.each do |post| %>	<!-- %=면 , %면 내부적으로 처리 -->
-<hr>
-<p>ID: <%= post.id %></p>
-<h4>제목: <%= post.title %></h4>
-<p>내용: <%= post.content %></p>
-<a href="/edit?id=<%= post.id %>">수정하기</a>
-<a href="/delete?id=<%= post.id %>">삭제하기</a>
-<hr>
-<% end %>
+  		<div>제목</div>
+			<input name="title" type="text" class="form-control" placeholder="제목">
+		<div class="form-group">
+			<div>내용</div>
+			<textarea name="content" type="text" class="form-control" rows="3" placeholder="내용"></textarea>
+		</div>
+  		<button type="submit" class="btn btn-primary">글쓰기</button>
+	</form>
+</div>
+
+<div class="container">
+	<hr>	
+	<h2 align="center">게시판</h2>
+	<hr>
+	<!-- <br/> -->	<!-- 한줄 띄어씀-->
+	<% Post.all.each do |post| %>	<!-- %=면 , %면 내부적으로 처리 -->
+	<hr>
+	<p>ID: <%= post.id %></p>
+	<h4>제목: <%= post.title %></h4>
+	<p>내용: <%= post.content %></p>
+	<a href="/edit?id=<%= post.id %>">수정하기</a>
+	<a href="/delete?id=<%= post.id %>">삭제하기</a>
+	<hr>
+	<% end %>
+</div>
+

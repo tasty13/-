@@ -6,6 +6,6 @@
  	<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
   	<input name="id" value="<%= Post.find(params[:id]).id %>" type="hidden">
   		제목: <input type="text" name="title" value="<%= @post.title %>"><br>
-  		내용: <input type="text" name="content" value="<%= @post.content %>" rows="3"><br>
+  		내용: <input type="text" name="content" value="<%= @post.content %>"><br>
   	<input type="submit" value="Submit">
 </form>
