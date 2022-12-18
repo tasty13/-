@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'jquery-rails' #Rails 5.1+
 gem 'rails_db', '~> 2.4', '>= 2.4.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2'

@@ -4,9 +4,9 @@ class BoardController < ApplicationController
 	  @posts = Post.all
   end
   def create
-	  title1 = params[:title]
+	  title1 = params[:title]	# 변수에 파라미터로 날아온 값 잡음
 	  content1 = params[:content]
-	  Post.create(title: title1, content: content1)
+	  Post.create(title: title1, content: content1)	#title에서 받은 변수를 title1이라는 컬럼에 넣어줌
 	  redirect_to '/board'
   end
   def edit
